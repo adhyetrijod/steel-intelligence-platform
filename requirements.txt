@@ -7,4 +7,3 @@ requests
 statsmodels
 openpyxl
 openai
-prophet
