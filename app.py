@@ -179,8 +179,8 @@ st.markdown("""
 
 st.sidebar.markdown(f"""
 <div style="padding:20px 0 12px;border-bottom:1px solid #1e293b;margin-bottom:20px;">
-    <div style="font-size:15px;color:#f1f5f9;font-weight:600;">ISFIP</div>
-    <div style="font-size:12px;color:#64748b;margin-top:3px;">Steel Financial Intelligence</div>
+    <<div style="font-size:15px;color:#f1f5f9;font-weight:600;">Ferrum Capital Intelligence</div>
+    <div style="font-size:12px;color:#64748b;margin-top:3px;">Industrial Analytics Platform</div> 
 </div>
 <div style="padding:0 0 16px;">
     <div style="font-size:10px;color:#475569;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:10px;font-weight:600;">Analysis Modules</div>
