@@ -159,7 +159,7 @@ if st.sidebar.button("▶ Run Monte Carlo Simulation", type="primary", use_conta
         })
         
         st.dataframe(
-            pct_df.style.applymap(
+            pct_df.style.map(
                 lambda v: 'color: red' if isinstance(v, float) and v < 0 else 'color: green',
                 subset=['EBITDA (₹ Cr)']
             ),

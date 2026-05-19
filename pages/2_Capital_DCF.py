@@ -152,7 +152,7 @@ if run_btn:
             elif val < 0: return 'color: #b91c1c; font-weight: 500'
         return 'color: #374151'
 
-    st.dataframe(cf_df.style.applymap(color_cells, subset=["FCFF (Rs Cr)", "NOPAT (Rs Cr)", "Cumulative PV (Rs Cr)"]).format({"EBITDA (Rs Cr)": "{:.1f}", "EBIT (Rs Cr)": "{:.1f}", "NOPAT (Rs Cr)": "{:.1f}", "FCFF (Rs Cr)": "{:.1f}", "Discount Factor": "{:.5f}", "PV of FCFF (Rs Cr)": "{:.1f}", "Cumulative PV (Rs Cr)": "{:.1f}"}), use_container_width=True, hide_index=True)
+    st.dataframe(cf_df.style.map(color_cells, subset=["FCFF (Rs Cr)", "NOPAT (Rs Cr)", "Cumulative PV (Rs Cr)"]).format({"EBITDA (Rs Cr)": "{:.1f}", "EBIT (Rs Cr)": "{:.1f}", "NOPAT (Rs Cr)": "{:.1f}", "FCFF (Rs Cr)": "{:.1f}", "Discount Factor": "{:.5f}", "PV of FCFF (Rs Cr)": "{:.1f}", "Cumulative PV (Rs Cr)": "{:.1f}"}), use_container_width=True, hide_index=True)
     st.markdown(f'<div class="footnote">FCFF = NOPAT + Depreciation (Rs {depreciation} Cr) - Maintenance CapEx (Rs {capex_maint} Cr) - Delta Working Capital (Rs {delta_wc} Cr). NOPAT = EBIT x (1 - {tax_rate}%). Tax shield on debt not included in FCFF model — reflected in WACC.</div>', unsafe_allow_html=True)
 
     st.markdown('<div class="section-header">Sensitivity Analysis — NPV vs WACC and Growth Rate</div>', unsafe_allow_html=True)
