@@ -43,12 +43,6 @@ st.markdown("""
     <h1 style="font-size:36px;font-weight:700;color:#f1f5f9;margin:0 0 14px;letter-spacing:-0.5px;line-height:1.15;">
         Steel Financial Intelligence Platform
     </h1>
-    <p style="font-size:15px;color:#94a3b8;max-width:620px;line-height:1.75;margin:0 0 20px;">
-        An institutional-grade financial analytics engine for integrated steel producers.
-        Seven quantitative models covering commodity risk, capital allocation, procurement
-        optimisation, and scenario planning — grounded in Bain and Company steel sector
-        research and live World Bank market data.
-    </p>
     <div style="display:flex;gap:28px;flex-wrap:wrap;">
         <div style="font-size:12px;color:#64748b;">
             <span style="color:#64748b;font-weight:500;">Research:</span>
