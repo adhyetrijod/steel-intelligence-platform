@@ -257,14 +257,14 @@ st.sidebar.markdown("""
 </div>
 """, unsafe_allow_html=True)
 
-st.sidebar.markdown(f"""
-<div style="background:#1e293b;border-radius:6px;padding:14px;margin-top:8px;">
-    <div style="font-size:10px;color:#64748b;text-transform:uppercase;letter-spacing:0.5px;margin-bottom:8px;font-weight:600;">Live Market Data</div>
-    <div style="font-size:13px;color:#94a3b8;line-height:1.9;">
-        Coking Coal: <span style="color:#f1f5f9;font-weight:600;">${spot_coal:.1f}/T</span><br>
-        Iron Ore: <span style="color:#f1f5f9;font-weight:600;">${spot_ore:.1f}/T</span><br>
-        Source: World Bank API<br>
-        Updated: Monthly
+st.markdown("""
+<div style="padding: 48px 0 32px 0; border-bottom: 1px solid #334155; margin-bottom: 36px;">
+    <h1 style="font-size: 36px; font-weight: 700; color: #ffffff; margin: 0 0 14px; letter-spacing: -0.5px; line-height: 1.15;">Steel Financial Intelligence Platform</h1>
+    <p style="font-size: 15px; color: #94a3b8; max-width: 620px; line-height: 1.75; margin: 0 0 20px;">An institutional-grade financial analytics engine for integrated steel producers. Seven quantitative models covering commodity risk, capital allocation, procurement optimisation, and scenario planning — grounded in Bain and Company steel sector research and live World Bank market data.</p>
+    <div style="display: flex; gap: 28px; flex-wrap: wrap;">
+        <div style="font-size: 12px; color: #64748b;"><span style="color: #94a3b8; font-weight: 500;">Research:</span> Bain Steel Sector 2024 · McKinsey Industrial · WSA Statistical Yearbook</div>
+        <div style="font-size: 12px; color: #64748b;"><span style="color: #94a3b8; font-weight: 500;">Use case:</span> Tata Steel India operations context</div>
+        <div style="font-size: 12px; color: #64748b;"><span style="color: #94a3b8; font-weight: 500;">Data:</span> World Bank Commodity API — live</div>
     </div>
 </div>
 """, unsafe_allow_html=True)
