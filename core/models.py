@@ -142,7 +142,7 @@ class SteelFinancialEngine:
             'cashflows':      cashflows,
             'pv_annual':      pv_cashflows,
             'years':          list(range(1, years + 1)),
-            'decision':       '✅ INVEST' if npv > 0 and irr > wacc else '❌ REJECT'
+            'decision':       'INVEST' if npv > 0 and irr > wacc else '❌ REJECT'
         }
 
     # ─── Model 3: Value at Risk ────────────────────────────────────────────────
@@ -234,9 +234,9 @@ class SteelFinancialEngine:
         Scenarios calibrated to Bain steel sector stress-test ranges.
         """
         scenarios = {
-            'Bear 🐻': dict(rev=0.85, coal=1.25, ore=1.20, vol=0.80),
-            'Base 📊': dict(rev=1.00, coal=1.00, ore=1.00, vol=1.00),
-            'Bull 🐂': dict(rev=1.18, coal=0.82, ore=0.85, vol=1.15),
+            'Bear': dict(rev=0.85, coal=1.25, ore=1.20, vol=0.80),
+            'Base': dict(rev=1.00, coal=1.00, ore=1.00, vol=1.00),
+            'Bull': dict(rev=1.18, coal=0.82, ore=0.85, vol=1.15),
         }
         out = {}
         for name, s in scenarios.items():

@@ -14,7 +14,7 @@ engine = SteelFinancialEngine()
 spot_coal = st.session_state.get('spot_coal', 180)
 spot_ore  = st.session_state.get('spot_ore', 120)
 
-st.title("🎲 Risk Engine — Monte Carlo EBITDA Simulation")
+st.title("Risk Engine — Monte Carlo EBITDA Simulation")
 st.markdown("""
 > **Industry Context:** Integrated steel producers face simultaneous exposure to coking coal 
 > and iron ore price volatility — both driven by China's demand cycle (correlation ρ = 0.45, 
@@ -22,7 +22,7 @@ st.markdown("""
 > commodity shocks, quantifying tail risk at CFO-reportable confidence levels.
 """)
 
-with st.expander("📖 Methodology & Assumptions"):
+with st.expander("Methodology & Assumptions"):
     st.markdown("""
     | Parameter | Value | Source |
     |-----------|-------|--------|
@@ -39,7 +39,7 @@ with st.expander("📖 Methodology & Assumptions"):
     coal price spike can wipe out quarterly EBITDA.
     """)
 
-st.sidebar.header("⚙️ Simulation Parameters")
+st.sidebar.header("Simulation Parameters")
 st.sidebar.markdown("*Adjust inputs to reflect your operating context*")
 
 revenue     = st.sidebar.slider("Monthly Revenue (₹ Cr)", 100, 2000, 500, 50,
@@ -58,7 +58,7 @@ n_sims      = st.sidebar.selectbox("Monte Carlo Simulations", [1000, 5000, 10000
 
 st.sidebar.markdown("---")
 st.sidebar.markdown(f"""
-**📡 Live Market Data**
+**Live Market Data**
 - Coking Coal: **${spot_coal:.0f}/T**
 - Iron Ore: **${spot_ore:.0f}/T**
 """)
@@ -80,7 +80,7 @@ if st.sidebar.button("▶ Run Monte Carlo Simulation", type="primary", use_conta
     progress.empty()
     
     # ── KPI Row ───────────────────────────────────────────────────────────────
-    st.markdown("### 📊 Risk Dashboard")
+    st.markdown("### Risk Dashboard")
     k1,k2,k3,k4,k5,k6 = st.columns(6)
     
     k1.metric("Mean EBITDA",    f"₹{mc['mean_ebitda']:.0f} Cr",
@@ -149,7 +149,7 @@ if st.sidebar.button("▶ Run Monte Carlo Simulation", type="primary", use_conta
         st.plotly_chart(fig, use_container_width=True)
     
     with col_b:
-        st.markdown("#### 📋 Percentile Table")
+        st.markdown("#### Percentile Table")
         percentiles = [1, 5, 10, 25, 50, 75, 90, 95, 99]
         pct_vals = [round(float(np.percentile(ebitda, p)), 1) for p in percentiles]
         
@@ -169,16 +169,16 @@ if st.sidebar.button("▶ Run Monte Carlo Simulation", type="primary", use_conta
         
         st.markdown("#### 🎯 Risk Rating")
         if mc['prob_loss_pct'] < 3:
-            st.success("✅ **LOW RISK**\nLoss prob < 3%\nCurrent strategy adequate")
+            st.success("**LOW RISK**\nLoss prob < 3%\nCurrent strategy adequate")
         elif mc['prob_loss_pct'] < 10:
-            st.warning("⚠️ **MODERATE RISK**\nActivate hedging\nMonitor weekly")
+            st.warning("**MODERATE RISK**\nActivate hedging\nMonitor weekly")
         elif mc['prob_loss_pct'] < 20:
-            st.error("🚨 **HIGH RISK**\nImmediate hedging\nCFO escalation needed")
+            st.error("**HIGH RISK**\nImmediate hedging\nCFO escalation needed")
         else:
-            st.error("🆘 **CRITICAL RISK**\nBoard intervention\nRestructure cost base")
+            st.error("**CRITICAL RISK**\nBoard intervention\nRestructure cost base")
     
     st.markdown("---")
-    st.markdown("#### 💡 Risk Interpretation")
+    st.markdown("#### Risk Interpretation")
     st.info(f"""
     **Board-level summary:** Under current market conditions (Coal: ${spot_coal:.0f}/T, 
     Ore: ${spot_ore:.0f}/T), the model projects a mean monthly EBITDA of **₹{mc['mean_ebitda']:.0f} Cr** 

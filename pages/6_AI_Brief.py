@@ -9,12 +9,12 @@ import os
 
 st.set_page_config(page_title="AI Executive Brief", layout="wide")
 
-st.title("🤖 GenAI Executive Brief Generator")
+st.title("GenAI Executive Brief Generator")
 st.caption("GPT-4o powered · Board-ready narrative · Bain SCRR framework")
 
 # ── Check OpenAI key ──────────────────────────────────────────────────────────
 with st.sidebar:
-    st.header("🔑 API Configuration")
+    st.header("API Configuration")
     api_key = st.text_input(
         "OpenAI API Key",
         type="password",
@@ -45,7 +45,7 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ── Input Panel ───────────────────────────────────────────────────────────────
-st.subheader("📊 Financial Model Inputs")
+st.subheader("Financial Model Inputs")
 st.caption("Enter outputs from your model runs — or leave defaults to demo")
 
 col1, col2, col3 = st.columns(3)
@@ -99,7 +99,7 @@ generate_btn = st.button("🚀 Generate Executive Brief (GPT-4o)", type="primary
 
 if generate_btn:
     if not api_key:
-        st.error("⚠️ Please enter your OpenAI API key in the sidebar.")
+        st.error("Please enter your OpenAI API key in the sidebar.")
         st.stop()
 
     with st.spinner("GPT-4o writing board-ready brief..."):
@@ -165,7 +165,7 @@ Length: ~300 words.
 
             # ── Display ───────────────────────────────────────────────────────
             st.markdown("---")
-            st.subheader("📋 GPT-4o Generated Executive Brief")
+            st.subheader("GPT-4o Generated Executive Brief")
 
             st.markdown(f"""
             <div style="background:#fffbf0; border-left:5px solid #e65100;
