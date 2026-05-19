@@ -1,6 +1,6 @@
 # core/models.py
 # ═══════════════════════════════════════════════════════════════
-# ISFIP — Integrated Steel Financial Intelligence Platform
+# ISFIP — Integrated Ferrum Capital Intelligence
 # Financial Models Engine
 # Inspired by: Bain & Company Steel Sector Cost Pressure Reports
 #              McKinsey Global Steel Index Methodology

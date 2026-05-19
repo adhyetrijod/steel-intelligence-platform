@@ -4,7 +4,7 @@ import plotly.graph_objects as go
 from plotly.subplots import make_subplots
 from core.data import get_coal_prices, get_ore_prices
 
-st.set_page_config(page_title="Steel Financial Intelligence Platform", layout="wide", initial_sidebar_state="expanded")
+st.set_page_config(page_title="Ferrum Capital Intelligence", layout="wide", initial_sidebar_state="expanded")
 
 @st.cache_data(ttl=3600)
 def load_data():
@@ -41,7 +41,7 @@ st.markdown("""
 st.markdown("""
 <div style="padding:48px 0 32px 0;border-bottom:1px solid #1e293b;margin-bottom:36px;">
     <h1 style="font-size:36px;font-weight:700;color:#f1f5f9;margin:0 0 14px;letter-spacing:-0.5px;line-height:1.15;">
-        Steel Financial Intelligence Platform
+        Ferrum Capital Intelligence
     </h1>
     <div style="display:flex;gap:28px;flex-wrap:wrap;">
         <div style="font-size:12px;color:#64748b;">
@@ -168,7 +168,7 @@ st.markdown(f'<div class="footnote">World Bank Commodity Markets Outlook. {len(c
 st.markdown("""
 <div style="margin-top:48px;padding-top:20px;border-top:1px solid #1e293b;display:flex;justify-content:space-between;flex-wrap:wrap;gap:16px;align-items:center;">
     <div>
-        <div style="font-size:13px;font-weight:600;color:#94a3b8;">Steel Financial Intelligence Platform</div>
+        <div style="font-size:13px;font-weight:600;color:#94a3b8;">Ferrum Capital Intelligence</div>
         <div style="font-size:12px;color:#475569;margin-top:2px;">Built independently — inspired by Bain and Company steel sector research</div>
     </div>
     <div style="text-align:right;">

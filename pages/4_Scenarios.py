@@ -28,7 +28,7 @@ st.markdown("""
 
 st.markdown(f"""
 <div style="padding: 32px 0 8px 0; border-bottom: 2px solid #374151; margin-bottom: 28px;">
-    <div style="font-size: 11px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">INTEGRATED STEEL FINANCIAL INTELLIGENCE PLATFORM</div>
+    <div style="font-size: 11px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">INTEGRATED FERRUM CAPITAL INTELLIGENCE</div>
     <h1 style="font-size: 26px; font-weight: 700; color: #f1f5f9; margin: 0; letter-spacing: -0.5px;">Scenario Planning and Stress Testing</h1>
     <div style="font-size: 14px; color: #64748b; margin-top: 6px;">Full Income Statement Across Five Economic Scenarios — Calibrated to Steel Sector Cycle Data</div>
     <div style="display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap;">
