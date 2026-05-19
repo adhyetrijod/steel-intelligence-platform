@@ -24,14 +24,14 @@ st.markdown("""
     div[data-testid="stSidebar"] * { color: #e2e8f0 !important; }
     .section-header { font-size: 11px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 1.5px; margin: 28px 0 14px; border-bottom: 1px solid #f3f4f6; padding-bottom: 8px; }
     .footnote { font-size: 12px; color: #9ca3af; font-style: italic; margin-top: 8px; line-height: 1.6; }
-    .insight-tag { display: inline-block; background: #eff6ff; color: #1d4ed8; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 4px; margin: 2px 4px 2px 0; }
+    .insight-tag { display: inline-block; background: #eff6ff; color: #f1f5f9; font-size: 11px; font-weight: 500; padding: 3px 10px; border-radius: 4px; margin: 2px 4px 2px 0; }
 </style>
 """, unsafe_allow_html=True)
 
 st.markdown(f"""
 <div style="padding: 32px 0 8px 0; border-bottom: 2px solid #7c2d12; margin-bottom: 28px;">
     <div style="font-size: 11px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">INTEGRATED STEEL FINANCIAL INTELLIGENCE PLATFORM</div>
-    <h1 style="font-size: 26px; font-weight: 700; color: #0f172a; margin: 0; letter-spacing: -0.5px;">Procurement Intelligence Engine</h1>
+    <h1 style="font-size: 26px; font-weight: 700; color: #f1f5f9; margin: 0; letter-spacing: -0.5px;">Procurement Intelligence Engine</h1>
     <div style="font-size: 14px; color: #64748b; margin-top: 6px;">Linear Programming Optimizer — Coking Coal and Iron Ore Strategic Sourcing</div>
     <div style="display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap;">
         <div style="font-size: 12px; color: #94a3b8;"><span style="color: #475569; font-weight: 500;">Solver:</span> SciPy HiGHS LP — Industry-grade linear programming</div>

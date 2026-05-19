@@ -30,7 +30,7 @@ st.markdown("""
 st.markdown("""
 <div style="padding: 32px 0 8px 0; border-bottom: 2px solid #1e3a5f; margin-bottom: 28px;">
     <div style="font-size: 11px; font-weight: 600; color: #6b7280; text-transform: uppercase; letter-spacing: 2px; margin-bottom: 6px;">INTEGRATED STEEL FINANCIAL INTELLIGENCE PLATFORM</div>
-    <h1 style="font-size: 26px; font-weight: 700; color: #0f172a; margin: 0; letter-spacing: -0.5px;">Capital Allocation Engine</h1>
+    <h1 style="font-size: 26px; font-weight: 700; color: #f1f5f9; margin: 0; letter-spacing: -0.5px;">Capital Allocation Engine</h1>
     <div style="font-size: 14px; color: #64748b; margin-top: 6px;">Discounted Cash Flow Analysis — Free Cash Flow to Firm Methodology</div>
     <div style="display: flex; gap: 24px; margin-top: 16px; flex-wrap: wrap;">
         <div style="font-size: 12px; color: #94a3b8;"><span style="color: #475569; font-weight: 500;">Model:</span> FCFF DCF + Gordon Growth Terminal Value</div>
