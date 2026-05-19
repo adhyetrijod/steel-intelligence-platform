@@ -8,7 +8,7 @@ st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
     html, body, [class*="css"] { font-family: 'Inter', sans-serif; }
-    [data-testid="stMetricValue"] { font-size: 22px !important; font-weight: 600 !important; color: #1a1a2e !important; }
+    [data-testid="stMetricValue"] { font-size: 22px !important; font-weight: 600 !important; color: #ffffff !important; }
     [data-testid="stMetricLabel"] { font-size: 11px !important; color: #6b7280 !important; text-transform: uppercase; letter-spacing: 0.5px; }
     [data-testid="metric-container"] { background: #ffffff; border-radius: 8px; padding: 16px 20px; border: 1px solid #e5e7eb; box-shadow: 0 1px 3px rgba(0,0,0,0.04); }
     div[data-testid="stSidebar"] { background: #0f172a; border-right: 1px solid #1e293b; }
